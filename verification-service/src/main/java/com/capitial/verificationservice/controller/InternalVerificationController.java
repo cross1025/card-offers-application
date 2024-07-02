@@ -1,6 +1,6 @@
 package com.capitial.verificationservice.controller;
 
-import com.capitial.verificationservice.dto.RequestDTO;
+import com.capitial.verificationservice.dto.VerificationFromIngestionDTO;
 import com.capitial.verificationservice.service.RequestProcessingService;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -20,8 +20,8 @@ public class InternalVerificationController {
     private final RequestProcessingService requestProcessingService;
 
     @PostMapping("/ingestion-request")
-    public void handleRequest(@RequestBody RequestDTO requestDTO) {
-        requestProcessingService.processRequest(requestDTO);
+    public void handleRequest(@RequestBody VerificationFromIngestionDTO verificationFromIngestionDTO) {
+        requestProcessingService.processRequest(verificationFromIngestionDTO);
     }
 
 }
