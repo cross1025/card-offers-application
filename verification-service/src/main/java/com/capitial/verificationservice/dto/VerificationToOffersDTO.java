@@ -5,19 +5,19 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class RequestDTO {
+public class VerificationToOffersDTO {
 
     private String firstName;
     private String middleName;
     private String lastName;
     private String email;
-    private String receivedCreditScore;
+    private Integer receivedCreditScore;
     private Integer last4SSN;
     private String phoneNumber;
     private String providerSource;
-    private String annualIncome;
+    private Long annualIncome;
     private Boolean employed;
     private Double debtToIncomeRatio;
-    private Boolean priorCapitalCredit;
+    private Boolean priorBadCapitalCredit;
 
 }

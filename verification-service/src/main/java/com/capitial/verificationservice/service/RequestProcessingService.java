@@ -1,9 +1,9 @@
 package com.capitial.verificationservice.service;
 
-import com.capitial.verificationservice.dto.RequestDTO;
+import com.capitial.verificationservice.dto.VerificationFromIngestionDTO;
 
 public interface RequestProcessingService {
 
-    void processRequest(RequestDTO requestDTO);
+    void processRequest(VerificationFromIngestionDTO verificationFromIngestionDTO);
 
 }
